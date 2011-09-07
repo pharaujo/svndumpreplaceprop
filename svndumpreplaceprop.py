@@ -244,8 +244,6 @@ def read_lump(f):
     if tcl > 0:
         lump.text = f.read(tcl)
 
-    lump.orig_text = os.linesep.join(lines) + lump.prop + lump.text
-
     return lump
 
 
